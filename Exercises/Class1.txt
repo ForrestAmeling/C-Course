@@ -1,0 +1,111 @@
+﻿GitHub Copilot 1.116.0.0 (v1.116.0.0@5a26aa711)
+GitHub Copilot Agent v1.116.0
+[Error] An error occurred for 'CopilotClientManager': System.AggregateException: One or more errors occurred. ---> System.ArgumentNullException: Value cannot be null.
+Parameter name: workspace
+   at Microsoft.Requires.NotNull[T](T value, String parameterName)
+   at Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.<GetServiceAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.WorkspaceManager.<<OnAfterOpenFolder>b__34_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.Threading.AwaitExtensions.ExecuteContinuationSynchronouslyAwaiter`1.GetResult()
+   at Microsoft.VisualStudio.Threading.AsyncLazy`1.<>c__DisplayClass13_0.<<GetValueAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.VisualStudio.LanguageServer.Client.WorkspaceManager.<GetWorkspacePathAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.RemoteLanguageClientInstance.<<InitializeStartLanguageServerTask>b__124_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.Threading.AsyncLazy`1.<>c__DisplayClass13_0.<<GetValueAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.RemoteLanguageClientInstance.<OnClientStartAsync>d__125.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.VisualStudio.Threading.TplExtensions.<InvokeAsync>d__20`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualStudio.Threading.TplExtensions.<InvokeAsync>d__20`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Copilot.CopilotLanguageClient.<InvokeStartAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Copilot.CopilotLanguageClient.<OnLoadedAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.RemoteLanguageClientInstance.<>c__DisplayClass32_0.<<-ctor>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.Threading.AsyncLazy`1.<>c__DisplayClass13_0.<<GetValueAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.MefClient.<EnsureInitializationAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.MefClientProvider.<LoadAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.RemoteLanguageServiceBroker.<LoadAsync>d__41.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Copilot.CopilotLanguageClient.<TryInitializeAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Copilot.CopilotClientManager.<TryEnsureAgentAsync>d__49.MoveNext()
+---> (Inner Exception #0) System.ArgumentNullException: Value cannot be null.
+Parameter name: workspace
+   at Microsoft.Requires.NotNull[T](T value, String parameterName)
+   at Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.<GetServiceAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.WorkspaceManager.<<OnAfterOpenFolder>b__34_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.Threading.AwaitExtensions.ExecuteContinuationSynchronouslyAwaiter`1.GetResult()
+   at Microsoft.VisualStudio.Threading.AsyncLazy`1.<>c__DisplayClass13_0.<<GetValueAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.VisualStudio.LanguageServer.Client.WorkspaceManager.<GetWorkspacePathAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.RemoteLanguageClientInstance.<<InitializeStartLanguageServerTask>b__124_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.Threading.AsyncLazy`1.<>c__DisplayClass13_0.<<GetValueAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.LanguageServer.Client.RemoteLanguageClientInstance.<OnClientStartAsync>d__125.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.VisualStudio.Threading.TplExtensions.<InvokeAsync>d__20`1.MoveNext()<---
+
+[DEBUG] [agent] [2023-10-19T19:43:37.984Z] Agent service starting
+[DEBUG] [agent] [2023-10-19T19:43:38.014Z] Telemetry initialized
+Auth Status: OK
+Successfully authorized GitHub Copilot.
