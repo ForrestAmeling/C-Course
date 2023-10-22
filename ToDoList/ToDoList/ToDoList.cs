@@ -9,16 +9,16 @@ var userChoice = Console.ReadLine();
 
 if(userChoice == "S")
 {
-    Console.WriteLine("Selected option: See all your TODOs:");  
+    PrintSelectedOption("See all TODOs");  
 } else if (userChoice == "A")
 {
-    Console.WriteLine("Selected option: Add a TODO:");
+    PrintSelectedOption("Add a TODO");
 } else if (userChoice == "R")
 {
-    Console.WriteLine("Selected option: Remove a TODO:");
+    PrintSelectedOption("Remove a TODO");
 } else if (userChoice == "E")
 {
-    Console.WriteLine("Selected option: Exit:");
+    PrintSelectedOption("Exit");
 } else
 {
     Console.WriteLine("Invalid option");
@@ -28,3 +28,9 @@ if(userChoice == "S")
 Console.ReadKey();
 
 
+void PrintSelectedOption(string selectedOption)
+{
+    Console.WriteLine($"Selected option: {selectedOption}");
+}
+
+ 
