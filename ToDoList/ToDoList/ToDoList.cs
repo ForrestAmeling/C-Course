@@ -7,14 +7,22 @@ Console.WriteLine("[E]xit");
 
 var userChoice = Console.ReadLine();
 
-if (userChoice.Length ==  0)
+if(userChoice == "S")
 {
-    Console.WriteLine("Empty choice!");
+    Console.WriteLine("Selected option: See all your TODOs:");  
+} else if (userChoice == "A")
+{
+    Console.WriteLine("Selected option: Add a TODO:");
+} else if (userChoice == "R")
+{
+    Console.WriteLine("Selected option: Remove a TODO:");
+} else if (userChoice == "E")
+{
+    Console.WriteLine("Selected option: Exit:");
+} else
+{
+    Console.WriteLine("Invalid option");
 }
-else{
-Console.WriteLine("Bib-empty choice: " + userChoice);
-    Console.WriteLine(Number);
-}   
 
 
 Console.ReadKey();
