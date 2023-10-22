@@ -5,18 +5,18 @@ Console.WriteLine("[A]dd a TODO");
 Console.WriteLine("[R]emove a TODO");
 Console.WriteLine("[E]xit");
 
-string userChoice = Console.ReadLine();
+var userChoice = Console.ReadLine();
 
-if (userChoice.Length <=  3)
+if (userChoice.Length ==  0)
 {
-    Console.WriteLine("Short answer");
+    Console.WriteLine("Empty choice!");
 }
-else if(userChoice.Length < 10){ Console.WriteLine("Medium answer");
-}
-else
-{
-    Console.WriteLine("Long answer");
-}
+else{
+Console.WriteLine("Bib-empty choice: " + userChoice);
+    Console.WriteLine(Number);
+}   
+
+
 Console.ReadKey();
 
 
