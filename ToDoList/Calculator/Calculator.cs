@@ -22,18 +22,18 @@ string userChoice = Console.ReadLine();
 //Interpolated Strings $"" - allows to use variables inside the string
 if (userChoice == "A" || userChoice == "a")
 {
-    Console.WriteLine($"Result: {firstNumber + secondNumber}");
+    Console.WriteLine($"Result: {firstNumber} + {secondNumber} = {firstNumber + secondNumber}");
 }
 else if (userChoice == "S" || userChoice == "s")
 {
-    Console.WriteLine($"Result: {firstNumber - secondNumber}");
+    Console.WriteLine($"Result: {firstNumber} - {secondNumber} = {firstNumber - secondNumber}");
 }
 else if (userChoice == "M" || userChoice == "m")
 {
-    Console.WriteLine($"Result: (firstNumber * secondNumber)");
+    Console.WriteLine($"Result: {firstNumber} * {secondNumber} = {firstNumber * secondNumber}");
 } else if (userChoice == "D" || userChoice == "d" && secondNumber != 0)
 {
-    Console.WriteLine($"Result: {firstNumber / secondNumber}");
+    Console.WriteLine($"Result: {firstNumber} / {secondNumber} = {firstNumber / secondNumber}");
 } else if (userChoice == "D" || userChoice == "d" && secondNumber == 0)
 {
     Console.WriteLine("You can not divide by 0");
