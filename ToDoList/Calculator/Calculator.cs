@@ -43,7 +43,7 @@ else
     Console.WriteLine("Invalid option");
 }
 
-Console.WriteLine("Press any key to close")
+Console.WriteLine("Press any key to close");
 Console.ReadKey();
 
 
