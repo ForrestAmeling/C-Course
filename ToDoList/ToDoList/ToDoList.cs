@@ -7,16 +7,16 @@ Console.WriteLine("[E]xit");
 
 var userChoice = Console.ReadLine();
 
-if(userChoice == "S")
+if(userChoice == "S" || userChoice == "s")
 {
     PrintSelectedOption("See all TODOs");  
-} else if (userChoice == "A")
+} else if (userChoice == "A" || userChoice == "a")
 {
     PrintSelectedOption("Add a TODO");
-} else if (userChoice == "R")
+} else if (userChoice == "R" || userChoice == "r")
 {
     PrintSelectedOption("Remove a TODO");
-} else if (userChoice == "E")
+} else if (userChoice == "E" || userChoice == "e")
 {
     PrintSelectedOption("Exit");
 } else
